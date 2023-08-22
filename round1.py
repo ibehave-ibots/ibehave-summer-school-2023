@@ -32,3 +32,5 @@ plt.figure(figsize=(9,3))
 
 plt.plot(names,Age)
 plt.ylabel('Age')
+plt.xlabel('names')
+
