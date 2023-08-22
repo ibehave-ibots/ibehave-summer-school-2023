@@ -59,6 +59,10 @@ with col1:
 st.subheader("Subject with fastest response time")
 fast_response = df["Time"].min()
 st.write(df[df["Time"] == fast_response])
+#subject with fastest response time
+st.subheader("Subject with slowest response time")
+slowest_response = df["Time"].max()
+st.write(df[df["Time"] == slowest_response])
 
 st.subheader("Overview of angle distribution All participants")
 #angle distributions
