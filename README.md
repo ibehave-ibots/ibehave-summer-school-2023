@@ -100,9 +100,9 @@ Follow these steps to guide participants through the workshop:
 
 #### 5.2 Preparing for Development
 
-1. Verify the presence of the **data.csv** file.
-2. Open the **main.py** file.
-3. In the terminal, execute the command `streamlit run main.py`. This action will display links in the terminal, but there's no need to manually click on them.
+1. Verify the presence of the **data/round1.csv** file.
+2. Open the **round1.py** file.
+3. In the terminal, execute the command `streamlit run round1.py`. This action will display links in the terminal, but there's no need to manually click on them.
 
 #### 5.3 Accessing the Dashboard
 
