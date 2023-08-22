@@ -42,3 +42,17 @@ sns.catplot(
     kind="bar",
 )
 st.write(plt)
+
+correct_data = defaultdict(lambda: {'total_correct': 0, 'trial_count': 0})
+
+for row in data:
+    subject = row[1]
+    correct = row[7]
+    correct_data[subject]['total_correct'] += correct
+    correct_data[subject]['trial_count'] += 1
+
+# Calculate and print the average correct answers for each subject
+for subject, info in correct_data.items():
+    average_correct = info['total_correct'] / info['trial_count']
+    print(f"Subject {subject}: Average correct answers = {average_correct}")
+    
