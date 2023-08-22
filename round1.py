@@ -29,7 +29,7 @@ with col1:
     st.pyplot(fig)
 
     fig, ax = plt.subplots()
-    df[df["Sex"]=="M"].plot.hist(column = "Age", ax = ax)
+    df[df["Sex"]=="M"].plot.hist(column = "Age", ax = ax, color = "blue")
     plt.title("Age Male")
     st.pyplot(fig)
 
@@ -43,8 +43,8 @@ with col2:
     st.pyplot(fig)
 
     fig, ax = plt.subplots()
-    df[df["Sex"]=="F"].plot.hist(column = "Age", ax = ax)
-    plt.title("Age Male")
+    df[df["Sex"]=="F"].plot.hist(column = "Age", ax = ax, color = "orange")
+    plt.title("Age Female")
     st.pyplot(fig)
 # pie chart for sex
 # Histogram for age in general
