@@ -18,7 +18,7 @@ import pandas as pd                     # https://pandas.pydata.org/docs/referen
 st.title('Flaming Flamingos Story Time')
 st.subheader('A legally different telling of a battle in space') 
 st.text('In a galaxy far, far away... there were some flamingos.')
-st.write('## Subheader')
+st.write('## Those Impacted by the Tyranny of the Empire')
 df = pd.read_csv('data/round1.csv') 
 import numpy as np
 
