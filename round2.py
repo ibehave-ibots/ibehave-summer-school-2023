@@ -53,3 +53,10 @@ for i, p in enumerate(unique_participants):
     res.at[i, 'n_trials'] = len(df[df.Subject== p]) 
     res.at[i, 'performance'] = df[df.Subject== p]['Correct'].sum()/  res.at[i, 'n_trials']
 st.write(res)
+
+fig, ax = plt.subplots(2,1)
+
+ax[0].hist(res['performance'])
+
+
+st.write(fig)
