@@ -102,3 +102,11 @@ plot = sns.catplot(
         kind="bar",
     )
 st.pyplot(plot)
+st.subheader("Response time - Male participants")
+plot = sns.catplot(
+        data=female_df, 
+        x='Matching', 
+        y='Time', 
+        kind="bar",
+    )
+st.pyplot(plot)
