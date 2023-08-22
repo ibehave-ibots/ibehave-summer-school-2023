@@ -26,10 +26,11 @@ st.write(df)
 st.text(f"The average age of subjects is {df['Age'].mean()}")
 st.text(f"The ratio of each sex of subject is {df[(df['Sex']=='M')].count() & df[(df['Sex']=='F')].count()}")
 
-fig, ax = plt.subplots()
-ax.hist(df[(df['Sex']=='M')], color = '#EF767A')
-ax.hist(df[(df['Sex']=='F')], color = '#456990')
-
+fig, ax = plt.subplots(1,2)
+ax[0].hist(df[(df['Sex']=='M')]['Age'], color = '#EF767A')
+ax[1].hist(df[(df['Sex']=='F')]['Age'], color = '#456990')
+xlabel
+st.pyplot(fig)
 # Create a violin plot using Seaborn
 plt.figure(figsize=(8, 6))  # Set the figure size
 sns.violinplot(x="Sex", y="Age", data=df)
