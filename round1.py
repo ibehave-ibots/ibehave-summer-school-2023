@@ -22,6 +22,7 @@ st.text('The wordls best data')
 st.write('Age and Sex wise distribution of feature X')
 df = pd.read_csv('data/round1.csv')
 col1, col2 = st.columns(2)
+st.write(df)
 with col1:
     fig, ax = plt.subplots()
     df.plot.hist(column = "Age", ax = ax)
@@ -35,6 +36,17 @@ with col1:
 with col2:
     sexTable = df['Sex'].value_counts()
     st.write(sexTable)
+
+    fig, ax = plt.subplots()
+    
+    sexTable.plot.pie(ax = ax, autopct='%.2f')
+    plt.title("Feature X: Sex Distribution")
+    st.pyplot(fig)
+
+    fig, ax = plt.subplots()
+    df[df["Sex"]=="F"].plot.hist(column = "Age", ax = ax)
+    plt.title("Age Male")
+    st.pyplot(fig)
 # pie chart for sex
 # Histogram for age in general
 # Histogram for age split by sex
