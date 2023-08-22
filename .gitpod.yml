@@ -13,9 +13,9 @@ github:
     branches: true
 
 ports:
-  - name: Jupyter Lab
-    description: The Default Jupyter Server Port
-    port: 8888-8891
+  - name: Streamlit Dashboard
+    description: The Default Streamlit Server Port
+    port: 8501
     visibility: public
     onOpen: open-browser
 
