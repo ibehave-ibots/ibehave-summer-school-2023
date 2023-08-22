@@ -35,10 +35,12 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
 
-sns.catplot(
+st.write(f"Number of participants: "+ str(df["Subject"].unique().shape[0]))
+plot = sns.catplot(
     data=df, 
     x='Subject', 
     y='Time', 
     kind="bar",
 )
-st.write(plt)
+st.pyplot(plot)
+#st.write(plt)
