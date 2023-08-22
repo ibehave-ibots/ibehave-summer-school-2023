@@ -36,25 +36,15 @@ df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
 
 st.write(f"Number of participants: "+ str(df["Subject"].unique().shape[0]))
-col1, col2 = st.columns(2)
-with col1:
+st.subheader("All correct answers, all participants")
+plot = sns.catplot(
+    data=df, 
+    x='Subject', 
+    y='Matching', 
+    kind="bar",
+)
+st.pyplot(plot)
 
-    plot = sns.catplot(
-        data=df, 
-        x='Subject', 
-        y='Time', 
-        kind="bar",
-    )
-    st.pyplot(plot)
-    #st.write(plt)
-    st.subheader("All correct answers, all participants")
-    plot = sns.catplot(
-        data=df, 
-        x='Subject', 
-        y='Matching', 
-        kind="bar",
-    )
-    st.pyplot(plot)
 #subject with fastest response time
 st.subheader("Subject with fastest response time")
 fast_response = df["Time"].min()
