@@ -59,4 +59,4 @@ fig, ax = plt.subplots()
 ax.hist(df['Age'],bins=10)
 st.pyplot(fig)
 
-st.line_chart(data=df, x='Trial', y='Correct')
+st.bar_chart(data=df, x='Trial', y='Correct')
