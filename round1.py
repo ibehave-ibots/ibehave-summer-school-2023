@@ -14,6 +14,7 @@ df['column_A'].unique()
 
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
+import numpy as np
 
 st.title('Middle school class trip:apple:')
 st.subheader('our goal') 
@@ -24,3 +25,4 @@ st.write('lets generate some data as a number of code eah person can write')
 st.dataframe(df)
 st.divider()
 l = len(df)
+rand_vec = np.random.randint(5, size=l)
