@@ -60,7 +60,7 @@ m_col, f_col = st.columns(2)
 male_df = df[df["Sex"] == "M"]
 female_df = df[df["Sex"] == "F"]
 with m_col:
-    st.subheader("All correct answers, all participants")
+    st.subheader("All correct answers, Male")
     plot = sns.catplot(
         data=male_df, 
         x='Subject', 
