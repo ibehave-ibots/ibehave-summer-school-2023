@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 st.title('Superduuper Team 1')
 st.subheader('Unbelivable Data') 
 st.text('The wordls best data')
-st.write('## Subheader')
+st.write('Age and Sex wise distribution of feature X')
 df = pd.read_csv('data/round1.csv')
 col1, col2 = st.columns(2)
 with col1:
