@@ -16,7 +16,7 @@ import streamlit as st                  # https://docs.streamlit.io/library/api-
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 
 st.title('Flaming Flamingos Story Time')
-st.subheader('Subheader') 
+st.subheader('A legally different telling of a battle in space') 
 st.text('Text')
 st.write('## Subheader')
 df = pd.read_csv('data/round1.csv') 
