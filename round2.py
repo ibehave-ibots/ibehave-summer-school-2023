@@ -34,6 +34,7 @@ import matplotlib.pyplot as plt
 st.title('Flaming Flamingos Story Time 2')
 st.subheader('The Flamingo Squaks Back')
 df = pd.read_csv('data/round2.csv')
+df.sort_values(by='Age', ascending=True)
 st.data_editor(df)
 
 
