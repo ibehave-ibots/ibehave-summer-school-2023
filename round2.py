@@ -31,10 +31,10 @@ import seaborn as sns                   # https://seaborn.pydata.org/generated/s
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 import matplotlib.pyplot as plt
-
+st.title('Flaming Flamingos Story Time 2')
 df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
-st.title('Flaming Flamingos Story Time 2')
+
 sns.catplot(
     data=df, 
     x='Subject', 
