@@ -49,7 +49,7 @@ angles = df.Angle
 grouped = df.groupby('Angle')['Correct'].agg(['sum', 'count'])
 grouped['hit_rate'] = grouped['sum'] / grouped['count']
 
-
+# Reset the index for the resulting DataFrame
 grouped = grouped.reset_index()
 
 # Print or display the resulting DataFrame
@@ -59,3 +59,4 @@ angles = [n / float(4) * 2 * pi for n in range(4)]
 angles += angles[:1]
 
 ax = plt.subplot(111,polar=True)
+ax = set_theta_
