@@ -25,8 +25,8 @@ st.text('Automated behavioral platform')
 st.write('## Subheader')
 df = pd.read_csv('data/round1.csv') 
 a = df.shape
-st.text(a)
-
+st.text('Our dataset has the shape: ',a)
+st.text('Mean age of the subjects in our dataset is: ',mean(df.Age))
 print(df.head(2))
 print(df.columns)
 print(len)
