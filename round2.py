@@ -52,3 +52,4 @@ for name, dd in df.groupby("Subject"):
     st.write("And here is the df for each participant",dd)
     percentage=int((sum_correct/total_rows)*100)
     st.write("This is the percentage of correct trials", percentage)
+    
