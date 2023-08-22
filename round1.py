@@ -29,9 +29,10 @@ fig, ax = plt.subplots(2,1,sharex=True)
 ax[0].set_title('All participants')
 ax[0].hist(df['Age'],color='k')
 ax[1].set_title('Sex sepereation')
-ax[1].hist(df[df.Sex=='F']['Age'], color='m', histtype='step')
-ax[1].hist(df[df.Sex=='M']['Age'], histtype='step', color='b')
+ax[1].hist(df[df.Sex=='F']['Age'], color='m', histtype='step', label = 'female')
+ax[1].hist(df[df.Sex=='M']['Age'], histtype='step', color='b', label = 'male')
 ax[1].set_xlabel('Age')
+ax[1].legend()
 
 
 
