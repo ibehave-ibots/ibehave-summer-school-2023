@@ -72,4 +72,6 @@ ax.fill(angles, grouped['hit_rate'])
 
 plt.show()
 
-st.pyplopt(plt)
+st.pyplot(plt)
+
+st.text("A radar plot correct rate based on ")
