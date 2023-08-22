@@ -26,6 +26,12 @@ with col1:
     fig, ax = plt.subplots()
     df.plot.hist(column = "Age", ax = ax)
     st.pyplot(fig)
+
+    fig, ax = plt.subplots()
+    df[df["Sex"]=="M"].plot.hist(column = "Age", ax = ax)
+    plt.title("Age Male")
+    st.pyplot(fig)
+
 with col2:
     sexTable = df['Sex'].value_counts()
     st.write(sexTable)
