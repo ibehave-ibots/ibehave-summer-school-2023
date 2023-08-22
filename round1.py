@@ -15,8 +15,11 @@ df['column_A'].unique()
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 
-st.title('Neuron')
+st.title('')
 st.subheader('pyramidal neuron') 
-st.text('Text')
+st.text('Text12')
 st.write('## Subheader')
 df = pd.read_csv('data/round1.csv') 
+print(df.to_string())
+st.write(df)
+male_df=df.groupby(['M'])
