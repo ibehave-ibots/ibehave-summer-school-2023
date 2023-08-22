@@ -56,6 +56,7 @@ with col1:
     )
     st.pyplot(plot)
 #subject with fastest response time
+st.subheader("Subject with fastest response time")
 fast_response = df["Time"].min()
 st.write(df[df["Time"] == fast_response])
 
