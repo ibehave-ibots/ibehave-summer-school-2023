@@ -57,7 +57,7 @@ st.write(res)
 fig, ax = plt.subplots(2,1)
 
 ax[0].hist(res['performance'])
-ax[0].xlabel('performance')
+ax[0].set_xlabel('performance')
 
 ax[1].hist(res['n_trails'])
 ax[1].set_xlabel('number of trials')
