@@ -15,7 +15,7 @@ df['column_A'].unique()
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 
-st.title('Middle school clss trip')
+st.title('Middle school class trip')
 st.subheader('funny coding game') 
 st.text('Text')
 st.write('OMG, what are we gonna do?')
