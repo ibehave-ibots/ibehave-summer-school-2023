@@ -14,6 +14,7 @@ df['column_A'].unique()
 
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
+import seaborn as sns
 
 st.title('Round 1 Data Dashboard')
 st.subheader('project description information') 
