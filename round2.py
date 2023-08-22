@@ -47,7 +47,7 @@ with col1:
     )
     st.pyplot(plot)
     #st.write(plt)
-
+    st.subheader("All correct answers, all participants")
     plot = sns.catplot(
         data=df, 
         x='Subject', 
