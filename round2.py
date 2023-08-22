@@ -71,3 +71,5 @@ ax.plot(angles, grouped['hit_rate'])
 ax.fill(angles, grouped['hit_rate'])
 
 plt.show()
+
+st.pyplopt(plt)
