@@ -32,6 +32,7 @@ with col1:
     df[df["Sex"]=="M"].plot.hist(column = "Age", ax = ax, color = "blue")
     plt.title("Age Male")
     st.pyplot(fig)
+    st.write("Distribution of age for male")
 
 with col2:
     sexTable = df['Sex'].value_counts()
