@@ -37,9 +37,6 @@ df = pd.read_csv('data/round2.csv')
 df.sort_values(by='Age', ascending=True)
 st.data_editor(df)
 
-
-
-
 '''
 sns.catplot(
     data=df, 
@@ -49,10 +46,14 @@ sns.catplot(
 )
 st.write(plt)
 '''
+
 age = df[["Age"]]
 time = df[["Time"]]
 fig, ax = plt.subplots()
 ax.hist(time, bins=6)
+
+fig, ax = plt.subplots()
+ax.hist(age, bins=6)
 
 #st.pyplot(fig, x= "Time")
 fig, ax = plt.subplots()
