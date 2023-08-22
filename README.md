@@ -38,7 +38,7 @@ These learning goals are designed to encompass technical, teamwork, time managem
 [![Generic badge](https://img.shields.io/badge/Team6-CC0066.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023/tree/round2-team6)
 [![Generic badge](https://img.shields.io/badge/Team7-CC0066.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023/tree/round2-team7)
 [![Generic badge](https://img.shields.io/badge/Team8-CC0066.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023/tree/round2-team8)
-[![Generic badge](https://img.shields.io/badge/Team9-CC0066.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round2-team9)
+[![Generic badge](https://img.shields.io/badge/Team9-CC0066.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023/tree/round2-team9)
 
 <br>
 <p align="center">
