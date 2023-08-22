@@ -32,7 +32,7 @@ import streamlit as st                  # https://docs.streamlit.io/library/api-
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 import matplotlib.pyplot as plt
 st.title('Flaming Flamingos Story Time 2')
-st.subtitle('The Flamingo Squaks Back')
+st.subheader('The Flamingo Squaks Back')
 df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
 
