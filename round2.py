@@ -42,7 +42,7 @@ x='Subject',
 y='Time', 
 kind="bar",
 )
-st.write(plt)
+#st.write(plt)
 
 ###
 angles = df.Angle
