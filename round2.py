@@ -67,4 +67,5 @@ st.write(fig)
 
 fig,ax=plt.subplots(1,1)
 ax.scatter(df['Trial'],df['Time'])
+ax.set_xlabel('Trial')
 st.write(fig)
