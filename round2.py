@@ -68,6 +68,14 @@ with m_col:
         kind="bar",
     )
     st.pyplot(plot)
+    plot = sns.catplot(
+        data=male_df, 
+        x='Subject', 
+        y='Time', 
+        kind="violin",
+    )
+    st.pyplot(plot)
+
 with f_col:
     
     st.subheader("All correct answers, all participants")
@@ -76,5 +84,12 @@ with f_col:
         x='Subject', 
         y='Matching', 
         kind="bar",
+    )
+    st.pyplot(plot)
+    plot = sns.catplot(
+        data=female_df, 
+        x='Subject', 
+        y='Time', 
+        kind="violin",
     )
     st.pyplot(plot)
