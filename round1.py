@@ -17,6 +17,6 @@ import pandas as pd                     # https://pandas.pydata.org/docs/referen
 
 st.title('This is a placeholder title')
 st.subheader('By Nataliam, Tracem and Ali') 
-st.text('Text')
+st.text('The magnificent team is learning how to commit')
 st.write('## Subheader')
 df = pd.read_csv('data/round1.csv') 
