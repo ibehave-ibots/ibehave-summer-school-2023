@@ -32,5 +32,4 @@ fig, ax = plt.subplots()
 ax.hist(Age, bins=10)
 st.pyplot(fig)
 st.line_chart(names)
-
-plt.figure(figsize=(9,3))
+st.title('Beautiful Data')
