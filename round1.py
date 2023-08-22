@@ -16,7 +16,7 @@ import streamlit as st                  # https://docs.streamlit.io/library/api-
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 import numpy as np
 
-st.title('Middle school class trip:apple:')
+st.title('Middle school :purple[class trip]:apple:')
 st.subheader('our goal') 
 st.text('Being noisy')
 st.write('OMG, what are we gonna do?')
