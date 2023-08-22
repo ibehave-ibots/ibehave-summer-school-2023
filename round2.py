@@ -35,9 +35,7 @@ st.title('Flaming Flamingos Story Time 2')
 st.subheader('The Flamingo Squaks Back')
 df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
-age = df[["Age"]]
-print(age)
-time = df[["Time"]]
+
 
 
 sns.catplot(
@@ -47,3 +45,7 @@ sns.catplot(
     kind="bar",
 )
 st.write(plt)
+
+age = df[["Age"]]
+print(age)
+time = df[["Time"]]
