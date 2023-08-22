@@ -51,4 +51,5 @@ res = pd.DataFrame(columns=['participant_id', 'n_trials', 'performance'])
 for i, p in enumerate(unique_participants):
     res.at[i,'participant_id'] = p
     res.at[i, 'n_trials'] = len(df[df.Subject== p]) 
+    res.at[i, 'performance'] = df[df.Subject== p]['Correct'].sum()/  res.at[i, 'n_trials']
 st.write(res)
