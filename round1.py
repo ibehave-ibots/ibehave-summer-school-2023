@@ -14,10 +14,20 @@ df['column_A'].unique()
 
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
+import matplotlib.pyplot as plt
 
 st.title('Superduuper Team 1')
 st.subheader('Unbelivable Data') 
-st.text('Text')
+st.text('The wordls best data')
 st.write('## Subheader')
 df = pd.read_csv('data/round1.csv')
-
+col1, col2 = st.columns(2)
+with col1:
+    fig, ax = plt.subplots()
+    df.plot.hist(column = "Age", ax = ax)
+    st.pyplot(fig)
+with col2:
+    
+# pie chart for sex
+# Histogram for age in general
+# Histogram for age split by sex
