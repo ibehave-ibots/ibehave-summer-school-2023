@@ -27,3 +27,4 @@ names = df[["Subject"]]
 print(names)
 Age = df[["Age"]]
 print(Age)
+plt.figure(figsize=(9,3))
