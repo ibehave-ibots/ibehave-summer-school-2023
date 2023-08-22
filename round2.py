@@ -31,6 +31,9 @@ import seaborn as sns                   # https://seaborn.pydata.org/generated/s
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+
 
 df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
@@ -42,3 +45,17 @@ sns.catplot(
     kind="bar",
 )
 st.write(plt)
+
+# Standardize the data
+scaler = StandardScaler()
+scaled_data = scaler.fit_transform(df)
+
+# Perform PCA
+pca = PCA(n_components=2)
+principal_components = pca.fit_transform(scaled_data)
+
+# Create a DataFrame for the principal components
+principal_df = pd.DataFrame(principal_components, columns=['PC1', 'PC2'])
+
+# Concatenate the original DataFrame with the principal components
+final_df = pd.concat([df, principal_df], axis=1)
