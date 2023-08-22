@@ -27,6 +27,7 @@ with col1:
     fig, ax = plt.subplots()
     df.plot.hist(column = "Age", ax = ax)
     st.pyplot(fig)
+    st.write("Distribution of age for all participants")
 
     fig, ax = plt.subplots()
     df[df["Sex"]=="M"].plot.hist(column = "Age", ax = ax, color = "blue")
