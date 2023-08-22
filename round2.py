@@ -45,4 +45,6 @@ st.write(plt)
 responses = df.loc[df['Correct']==1]
 
 male_responses=responses.loc[responses['Sex']=='M']
-print(male_responses)
+print(len(male_responses))
+female_responses=responses.loc[responses['Sex']=='F']
+print(len(female_responses))
