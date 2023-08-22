@@ -48,3 +48,4 @@ male_responses=responses.loc[responses['Sex']=='M']
 print(len(male_responses))
 female_responses=responses.loc[responses['Sex']=='F']
 print(len(female_responses))
+
