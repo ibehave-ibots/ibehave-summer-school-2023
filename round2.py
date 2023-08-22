@@ -52,7 +52,7 @@ grouped['hit_rate'] = grouped['sum'] / grouped['count']
 # Reset the index for the resulting DataFrame
 grouped = grouped.reset_index()
 
-# Print or display the resulting DataFrame
+
 print(grouped)
 
 angles = [n / float(4) * 2 * pi for n in range(4)]
@@ -67,4 +67,7 @@ categories = pd.unique(angles, dtype=str)
 
 plt.xticks(angles[:-1], categories)
 
+ax.plot(angles, grouped['hit_rate'])
+ax.fill(angles, grouped['hit_rate'])
 
+plt.show()
