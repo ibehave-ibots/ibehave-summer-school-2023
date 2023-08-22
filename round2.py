@@ -58,8 +58,8 @@ angles += angles[:1]
 
 ax = plt.subplot(111,polar=True)
 
-ax = set_theta_offset(pi/2)
-ax = set_theta_direction(-1)
+ax.set_theta_offset(pi/2)
+ax.set_theta_direction(-1)
 
 categories = pd.unique(angles, dtype=str)
 
