@@ -27,6 +27,8 @@ with tab2:
     st.data_editor(df)              
 '''
 
+#Subject,Trial,Angle,Matching,Response,Time,Correct,Age,Sex
+
 import seaborn as sns                   # https://seaborn.pydata.org/generated/seaborn.catplot.html
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
@@ -41,4 +43,4 @@ sns.catplot(
     y='Time', 
     kind="bar",
 )
-st.write(plt)
+st.write('The number of participants is '+str(len(df['Subject'].unique())))
