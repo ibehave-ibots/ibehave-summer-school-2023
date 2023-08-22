@@ -16,7 +16,7 @@ import streamlit as st                  # https://docs.streamlit.io/library/api-
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 
 st.title('This is a placeholder title')
-st.subheader('By Nataliam, Tracem and Ali') 
+st.subheader('By Natalia, Trace, and Ali') 
 st.text('The magnificent team is learning how to commit')
 st.write('## Subheader')
 df = pd.read_csv('data/round1.csv') 
