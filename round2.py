@@ -31,14 +31,31 @@ import seaborn as sns                   # https://seaborn.pydata.org/generated/s
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 import matplotlib.pyplot as plt
+from math import pi
 
 df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
 
 sns.catplot(
-    data=df, 
-    x='Subject', 
-    y='Time', 
-    kind="bar",
+data=df, 
+x='Subject', 
+y='Time', 
+kind="bar",
 )
 st.write(plt)
+
+###
+angles = df.Angle
+grouped = df.groupby('Angle')['Correct'].agg(['sum', 'count'])
+grouped['hit_rate'] = grouped['sum'] / grouped['count']
+
+# Reset the index for the resulting DataFrame
+grouped = grouped.reset_index()
+
+# Print or display the resulting DataFrame
+print(grouped)
+
+angles = [n / float(4) * 2 * pi for n in range(4)]
+angles += angles[:1]
+
+ax = plt.subplot(111,polar=True)
