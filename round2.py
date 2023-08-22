@@ -40,7 +40,7 @@ st.data_editor(df)
 
 
 
-
+'''
 sns.catplot(
     data=df, 
     x='Subject', 
@@ -48,7 +48,7 @@ sns.catplot(
     kind="bar",
 )
 st.write(plt)
-
+'''
 age = df[["Age"]]
 time = df[["Time"]]
 fig, ax = plt.subplots()
