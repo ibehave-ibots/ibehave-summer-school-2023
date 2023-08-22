@@ -51,6 +51,7 @@ st.metric('average age', np.mean(df['Age']))
 st.metric('Average Performance (%)', 100 * np.sum(df['Correct']) / len(df['Correct']))
 df.query("Sex=='F'")["Age"]
 st.text(df.query("Sex=='F'")["Correct"])
+st.bar_chart(data=df, x='Sex', y='Correct')
 
 st.write('distribution of age')
 
