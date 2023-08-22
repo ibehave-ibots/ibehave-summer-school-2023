@@ -14,9 +14,12 @@ df['column_A'].unique()
 
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
+from pathlib import Path
 
 st.title('This is a placeholder title')
 st.subheader('By Natalia, Trace, and Ali') 
 st.text('The magnificent team is learning how to commit')
 st.write('## Subheader')
-df = pd.read_csv('data/round1.csv') 
+df = pd.read_csv('data/round1.csv')
+st.text("Here's the data:")
+df.apply(lambda row: st.text(f'Subject: {row["Subject"]}, Age: {row["Age"]}, Sex: {row["Sex"]}'), axis=1)
