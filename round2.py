@@ -59,6 +59,7 @@ with col1:
 fast_response = df["Time"].min()
 st.write(df[df["Time"] == fast_response])
 
+st.subheader("Overview of angle distribution All participants")
 #angle distributions
 fig, ax = plt.subplots()
 df.plot.hist(column= "Angle",ax=ax, bins=1000)
