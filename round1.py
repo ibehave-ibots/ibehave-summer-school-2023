@@ -18,6 +18,7 @@ import pandas as pd                     # https://pandas.pydata.org/docs/referen
 st.title('Round 1 Data Dashboard')
 st.subheader('Subject information') 
 st.text('data analysis for neural spiking data')
+st.text('Epileptic Seizure Onset Detection')
 st.write('## Subheader')
 df = pd.read_csv('data/round1.csv') 
 #print(df)
