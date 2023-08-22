@@ -55,7 +55,7 @@ grouped = grouped.reset_index()
 print(angles)
 
 
-angles = [n / float(5) * 2 * pi for n in range(5)]
+angles = [n / float(3) * 2 * pi for n in range(3)]
 angles += angles[:1]
 
 ax = plt.subplot(111,polar=True)
