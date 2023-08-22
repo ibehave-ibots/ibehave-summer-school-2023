@@ -65,4 +65,6 @@ ax.set_theta_direction(-1)
 
 categories = pd.unique(angles, dtype=str)
 
-plt.xticks
+plt.xticks(angles[:-1], categories)
+
+
