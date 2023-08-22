@@ -24,7 +24,6 @@ df = pd.read_csv('data/round1.csv')
 st.write(df)
 
 sex_counts = df['Sex'].value_counts()
-
 plt.bar(sex_counts.index, sex_counts.values)
 
 plt.xlabel('Sex')
