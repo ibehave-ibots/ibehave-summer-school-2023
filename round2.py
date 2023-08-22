@@ -37,6 +37,7 @@ df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
 age = df[["Age"]]
 print(age)
+time = df[["Time"]]
 
 
 sns.catplot(
