@@ -60,7 +60,7 @@ ax.hist(age, bins=6)
 fig, ax = plt.subplots()
 st.table(df)
 
-for PIL import Image
+from PIL import Image
 image = Image.open('iBehave.jpg')
 st.image(image, caption='Oh yeah')
 
