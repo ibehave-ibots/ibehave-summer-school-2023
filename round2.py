@@ -36,6 +36,7 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
+st.write('The mental rotation experiment')
 
 sns.catplot(
     data=df, 
