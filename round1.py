@@ -23,4 +23,4 @@ df = pd.read_csv('data/round1.csv')
 
 st.write(df)
 z=df.iloc[:,2]
-plt(z)
+plt(len(z),z)
