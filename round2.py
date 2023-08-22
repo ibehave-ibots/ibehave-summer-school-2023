@@ -38,6 +38,8 @@ st.data_editor(df)
 
 
 
+
+
 sns.catplot(
     data=df, 
     x='Subject', 
@@ -49,3 +51,5 @@ st.write(plt)
 age = df[["Age"]]
 print(age)
 time = df[["Time"]]
+st.line_chart(time)
+
