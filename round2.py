@@ -50,4 +50,4 @@ st.metric('number of subjects', len(np.unique(df['Subject'])))
 st.metric('average age', np.mean(df['Age']))
 st.metric('Average Performance (%)', 100 * np.sum(df['Correct']) / len(df['Correct']))
 df.query("Sex=='F'")["Age"]
-st.text(df.query)
+st.text(df.query("Sex=='F'")["Correct"])
