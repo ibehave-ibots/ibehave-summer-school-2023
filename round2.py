@@ -55,3 +55,26 @@ with col1:
         kind="bar",
     )
     st.pyplot(plot)
+
+m_col, f_col = st.columns(2)
+male_df = df[df["Sex"] == "M"]
+female_df = df[df["Sex"] == "F"]
+with m_col:
+    st.subheader("All correct answers, all participants")
+    plot = sns.catplot(
+        data=male_df, 
+        x='Subject', 
+        y='Matching', 
+        kind="bar",
+    )
+    st.pyplot(plot)
+with f_col:
+    
+    st.subheader("All correct answers, all participants")
+    plot = sns.catplot(
+        data=female_df, 
+        x='Subject', 
+        y='Matching', 
+        kind="bar",
+    )
+    st.pyplot(plot)
