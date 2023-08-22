@@ -29,7 +29,9 @@ Age = df[["Age"]]
 print(Age)
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots()
-ax.hist(Age, bins=5)
+ax.hist(Age, bins=10)
+st.pyplot(fig)
+
 
 plt.figure(figsize=(9,3))
 '''
