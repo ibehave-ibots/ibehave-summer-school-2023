@@ -55,7 +55,7 @@ fig, ax = plt.subplots()
 ax.hist(time, bins=6)
 
 st.pyplot(fig)
-
+st.ylabel = ('Time')
 
 
 
