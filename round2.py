@@ -54,7 +54,7 @@ for i, p in enumerate(unique_participants):
     res.at[i, 'performance'] = df[df.Subject== p]['Correct'].sum()/  res.at[i, 'n_trials']
 st.write(res)
 
-fig, ax = plt.subplots(2,1)
+fig, ax = plt.subplots(2,1, tightlayout=True)
 
 ax[0].hist(res['performance'])
 ax[0].set_xlabel('performance')
