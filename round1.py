@@ -18,5 +18,5 @@ import pandas as pd                     # https://pandas.pydata.org/docs/referen
 st.title('Middle school clss trip')
 st.subheader('funny coding game') 
 st.text('Text')
-st.write('## Subheader')
+st.write('OMG, what are we gonna do?')
 df = pd.read_csv('data/round1.csv') 
