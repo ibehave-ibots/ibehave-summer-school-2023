@@ -17,6 +17,6 @@ import pandas as pd                     # https://pandas.pydata.org/docs/referen
 
 st.title('Team2 iBots workshop')
 st.subheader('coolest kids') 
-st.text('Text')
+st.text('`i am having fun`')
 st.write('## Subheader')
 df = pd.read_csv('data/round1.csv') 
