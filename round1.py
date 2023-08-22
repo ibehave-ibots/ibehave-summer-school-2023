@@ -38,5 +38,7 @@ st.write(fig)
 st.text('Description of the age structure in experiment XY')
 st.write('## Interpretatio of data')
 
+st.text('The data shows that males and females can be of similar age')
+
 
 
