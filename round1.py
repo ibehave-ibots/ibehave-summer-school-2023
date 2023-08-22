@@ -33,3 +33,4 @@ st.line_chart(df['Age'])
 Age_df = pd.DataFrame()
 Age_df['M'] = df.query("Sex=='M'")["Age"]
 st.text(Age_df)
+Age_df['F'] = df.query("Sex=='F'")["Age"]
