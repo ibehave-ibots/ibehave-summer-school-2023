@@ -33,4 +33,9 @@ ax.hist(Age, bins=10)
 st.pyplot(fig)
 st.line_chart(names)
 st.title('Beautiful Data')
-st.ylabel('Age')
+# st.ylabel('Age')
+
+
+from PIL import Image
+image = Image.open(r"iBehave.jpg")
+st.image(image, caption='Flaming Flamingos')
