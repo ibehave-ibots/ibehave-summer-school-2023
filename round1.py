@@ -15,8 +15,10 @@ df['column_A'].unique()
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 
-st.title('Title')
+st.title('New Title')
 st.subheader('Subheader') 
 st.text('Text')
 st.write('## Subheader')
-df = pd.read_csv('data/round1.csv') 
+df = pd.read_csv('data/round1.csv')
+
+
