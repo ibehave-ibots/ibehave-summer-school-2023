@@ -42,7 +42,6 @@ sns.catplot(
     kind="bar",
 )
 
-st.write(plt)
 
 # intro information
 st.title("Nature Cover Article")
