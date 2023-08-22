@@ -28,9 +28,14 @@ print(names)
 Age = df[["Age"]]
 print(Age)
 import matplotlib.pyplot as plt
-plt.figure(figsize=(9,3))
+fig, ax = plt.subplots()
+ax.hist(Age, bins=5)
 
+plt.figure(figsize=(9,3))
+'''
+st.pyplot(names,Age)
 plt.plot(names,Age)
 plt.ylabel('Age')
 plt.xlabel('names')
 plt.title('Those Impacted by the Tyranny of the Empire')
+'''
