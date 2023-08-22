@@ -35,10 +35,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
 
-sns.catplot(
-    data=df, 
-    x='Subject', 
-    y='Time', 
-    kind="bar",
-)
-st.write(plt)
+
+sns.catplot(data=df, x='Trial', y='Correct', kind="point")
+st.write(plt.gcf())
+
