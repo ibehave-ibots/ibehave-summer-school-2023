@@ -51,5 +51,11 @@ st.write(plt)
 age = df[["Age"]]
 print(age)
 time = df[["Time"]]
-st.line_chart(time)
+st.figure()
+st.bar_chart(time)
+
+
+
+
+
 
