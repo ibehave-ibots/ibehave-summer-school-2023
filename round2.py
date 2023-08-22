@@ -43,6 +43,8 @@ sns.catplot(
 )
 st.write(plt)
 
+from collections import defaultdict
+
 correct_data = defaultdict(lambda: {'total_correct': 0, 'trial_count': 0})
 
 for row in data:
@@ -55,4 +57,3 @@ for row in data:
 for subject, info in correct_data.items():
     average_correct = info['total_correct'] / info['trial_count']
     print(f"Subject {subject}: Average correct answers = {average_correct}")
-    
