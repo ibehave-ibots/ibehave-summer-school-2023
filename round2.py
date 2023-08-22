@@ -92,6 +92,7 @@ with m_col:
     )
     st.pyplot(plot)
 
+#plot timing for correct incorrect
 st.subheader("All correct answers, All")
 plot = sns.catplot(
         data=df, 
