@@ -47,3 +47,11 @@ with col1:
     )
     st.pyplot(plot)
     #st.write(plt)
+
+    plot = sns.catplot(
+        data=df, 
+        x='Subject', 
+        y='Matching', 
+        kind="bar",
+    )
+    st.pyplot(plot)
