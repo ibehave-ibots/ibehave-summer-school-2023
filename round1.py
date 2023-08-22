@@ -20,4 +20,4 @@ st.subheader('our goal')
 st.text('Being noisy')
 st.write('OMG, what are we gonna do?')
 df = pd.read_csv('data/round1.csv') 
-
+st.write('lets generate some data as a number of code eah person can write')
