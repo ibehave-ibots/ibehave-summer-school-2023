@@ -16,7 +16,7 @@ import streamlit as st                  # https://docs.streamlit.io/library/api-
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 
 st.title('Round 1 Data Dashboard')
-st.subheader('Subheader') 
+st.subheader('Subject information') 
 st.text('Text')
 st.write('## Subheader')
 df = pd.read_csv('data/round1.csv') 
