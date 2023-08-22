@@ -16,7 +16,7 @@ import streamlit as st                  # https://docs.streamlit.io/library/api-
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 import matplotlib.pyplot as plt
 
-st.title('Superduuper Team 1')
+st.title('Superduper Team 1')
 st.subheader('Unbelivable Data') 
 st.text('The wordls best data')
 st.write('Age and Sex wise distribution of feature X')
