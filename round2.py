@@ -34,7 +34,7 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
-
+st.title('Flaming Flamingos Story Time 2')
 sns.catplot(
     data=df, 
     x='Subject', 
