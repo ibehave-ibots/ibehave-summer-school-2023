@@ -31,6 +31,7 @@ import seaborn as sns                   # https://seaborn.pydata.org/generated/s
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 import matplotlib.pyplot as plt
+import sklearn
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
