@@ -17,6 +17,6 @@ import pandas as pd                     # https://pandas.pydata.org/docs/referen
 
 st.title('Group8_r1_ibots')
 st.subheader('Hi Guys') 
-st.text('Text')
-st.write('## Subheader')
+st.text('I don´t like food')
+st.write('But I like math')
 df = pd.read_csv('data/round1.csv') 
