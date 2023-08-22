@@ -65,7 +65,6 @@ st.pyplot(fig)
 m_col, f_col = st.columns(2)
 male_df = df[df["Sex"] == "M"]
 female_df = df[df["Sex"] == "F"]
-st.write("---")
 with m_col:
     #all male
     st.subheader("All correct answers, Male")
