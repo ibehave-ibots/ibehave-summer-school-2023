@@ -53,4 +53,7 @@ df.query("Sex=='F'")["Age"]
 st.text(df.query("Sex=='F'")["Correct"])
 
 st.write('distribution of age')
-np.histogram(df['Age'],bins=10)
+n = np.histogram(df['Age'],bins=10)
+fig, ax = plt.subplots()
+ax.hist(n)
+st.pyplot(fig)
