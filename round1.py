@@ -32,3 +32,7 @@ plt.title('Distribution of Sex in the DataFrame')
 
 
 st.pyplot()
+st.write("Mean Age by Sex")
+st.table(mean_age_by_sex)
+
+mean_age_by_sex = df.groupby('Sex')['Subject Age'].mean()
