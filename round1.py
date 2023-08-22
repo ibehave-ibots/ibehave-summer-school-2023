@@ -15,6 +15,7 @@ df['column_A'].unique()
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 import seaborn as sns
+import matplotlib as plt
 
 st.title('Round 1 Data Dashboard')
 st.subheader('project description information') 
@@ -35,8 +36,9 @@ st.text(mn_age)
 print(df.head(2))
 print(df.columns)
 print(len)
-print(df['Sex'].value_counts())
+val_cnt = df['Sex'].value_counts()
+print()
 st.text('number of females and males: ')
 st.text(sex_count)
-
-age= max(df['Age'].max())
+plt.plot('Sex','Count',data=val_cnt)
+#age= max(df['Age'].max())
