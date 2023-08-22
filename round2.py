@@ -64,3 +64,6 @@ ax[1].set_xlabel('number of trials')
 
 fig.supylabel('Number [#]')
 st.write(fig)
+
+fig,ax=plt.figure()
+ax=plt.scatter(df['Trial'],df['Time'])
