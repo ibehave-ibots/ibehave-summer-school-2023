@@ -25,9 +25,12 @@ hist,edges=np.histogram(df['Age'])
 
 f_hist,f_edges=np.histogram(df['Age'])
 
-fig, ax = plt.subplots(1,2)
+fig, ax = plt.subplots(2,1)
 ax[0].hist(df['Age'])
+ax[1].hist(df[df.Sex=='F', 'Age'])
 ax[0].set_xlabel('Age')
+
+
 st.write(fig)
 st.text('Description of the age structure in experiment XY')
 st.write('## Subheader')
