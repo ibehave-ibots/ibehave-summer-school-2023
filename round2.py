@@ -55,6 +55,7 @@ ax.hist(time, bins=6)
 fig, ax = plt.subplots()
 ax.hist(age, bins=6)
 
+
 #st.pyplot(fig, x= "Time")
 fig, ax = plt.subplots()
 st.table(df)
