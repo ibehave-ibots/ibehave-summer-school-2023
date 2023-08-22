@@ -23,7 +23,7 @@ with col2:
 tab1, tab2 = st.tabs(tabs=['tab1_name', 'tab2_name'])
 with tab1:
     st.write('tab1')
-with tab2:
+with tab2 :
     st.data_editor(df)              
 '''
 
