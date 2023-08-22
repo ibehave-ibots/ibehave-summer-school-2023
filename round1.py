@@ -30,4 +30,5 @@ plt.xlabel('Sex')
 plt.ylabel('Count')
 plt.title('Distribution of Sex in the DataFrame')
 
-plt.show()
+
+st.pyplot()
