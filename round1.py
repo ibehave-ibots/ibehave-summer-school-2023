@@ -27,4 +27,8 @@ names = df[["Subject"]]
 print(names)
 Age = df[["Age"]]
 print(Age)
+import matplotlib.pyplot as plt
 plt.figure(figsize=(9,3))
+
+plt.plot(names,Age)
+
