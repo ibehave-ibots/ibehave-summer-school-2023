@@ -51,8 +51,10 @@ st.write(plt)
 
 age = df[["Age"]]
 time = df[["Time"]]
-st.figure()
-st.bar_chart(time)
+fig, ax = plt.subplots()
+ax.hist(time, bins=6)
+
+st.pyplot(fig)
 
 
 
