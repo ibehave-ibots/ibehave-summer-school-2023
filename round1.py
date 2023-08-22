@@ -38,9 +38,9 @@ ax[1].legend()
 
 st.write(fig)
 st.text('Description of the age structure in experiment XY')
-st.write('## Interpretatio of data')
+st.write('## Interpretation of data')
 
-st.text('The data shows that males and females can be of similar age')
+st.text('The data shows that males and females can be of similar age. ')
 
 
 
