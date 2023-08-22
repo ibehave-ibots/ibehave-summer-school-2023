@@ -119,4 +119,4 @@ with f_col:
     )
     st.pyplot(plot)
 
-
+#TODO: in future make really nice plots!
