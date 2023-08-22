@@ -36,9 +36,11 @@ df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
 
 
-sns.catplot(data=df, x='Trial', y='Correct', kind="point")
+sns.lineplot(data=df, x='Trial', y='Correct')
 st.write(plt.gcf())
 
 plt.figure()
 sns.displot(data=df, x='Time')
 st.write(plt.gcf())
+
+st.write(df['Correct'])
