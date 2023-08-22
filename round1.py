@@ -36,6 +36,6 @@ mean_age_by_sex = df.groupby('Sex')['Age'].mean()
 st.write("Mean Age by Sex")
 st.table(mean_age_by_sex)
 
-grouped = df.groupby('Sex')['Age'].agg(['mean', 'std'])
+grouped = df.groupby('Sex')['Age'].agg(['Mean', 'SDs'])
 st.write("Statistics of Age by Sex")
 st.table(grouped)
