@@ -25,4 +25,5 @@ import numpy as np
 print(df)
 names = df[["Subject"]]
 print(names)
-
+Age = df[["Age"]]
+print(Age)
