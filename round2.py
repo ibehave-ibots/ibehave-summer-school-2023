@@ -61,6 +61,6 @@ ax.hist(df['Age'],bins=10)
 st.pyplot(fig)
 
 
-st.write('Bar chart for correctnes across trials')
+st.write('Bar chart for correctness across trials')
 
 st.bar_chart(data=df, x='Trial', y='Correct')
