@@ -30,3 +30,6 @@ age = np.mean(df['Age'])
 st.metric('average age',age,3)
 
 st.line_chart(df['Age'])
+Age_df = pd.DataFrame()
+Age_df['M'] = df.query("Sex=='M'")["Age"]
+st.text(Age_df)
