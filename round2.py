@@ -61,6 +61,7 @@ df.plot.hist(column= "Angle",ax=ax, bins=1000)
 plt.xlim([0,200])
 st.pyplot(fig)
 
+# split female and male into different columns for easier vis
 m_col, f_col = st.columns(2)
 male_df = df[df["Sex"] == "M"]
 female_df = df[df["Sex"] == "F"]
