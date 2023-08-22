@@ -59,6 +59,11 @@ with col1:
 fast_response = df["Time"].min()
 st.write(df[df["Time"] == fast_response])
 
+#angle distributions
+fig, ax = plt.subplots()
+df.plot.hist(column= "Angle",ax=ax)
+st.pyplot(fig)
+
 m_col, f_col = st.columns(2)
 male_df = df[df["Sex"] == "M"]
 female_df = df[df["Sex"] == "F"]
