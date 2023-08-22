@@ -35,7 +35,6 @@ with col1:
 
 with col2:
     sexTable = df['Sex'].value_counts()
-    st.write(sexTable)
 
     fig, ax = plt.subplots()
     
