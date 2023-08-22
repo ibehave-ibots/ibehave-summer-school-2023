@@ -53,8 +53,6 @@ grouped['hit_rate'] = grouped['sum'] / grouped['count']
 grouped = grouped.reset_index()
 
 
-print(grouped)
-
 angles = [n / float(4) * 2 * pi for n in range(4)]
 angles += angles[:1]
 
