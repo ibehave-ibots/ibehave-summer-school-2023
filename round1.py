@@ -28,3 +28,5 @@ l = len(df)
 rand_vec = np.random.randint(5, size=l)
 age = np.mean(df['age'])
 st.metric('average age',np.mean(rand_vec),3)
+
+st.line_chart(df['age'])
