@@ -24,6 +24,9 @@ st.text('locomotor modulation of Drosophila sensory processing')
 st.text('Automated behavioral platform')
 st.write('## Subheader')
 df = pd.read_csv('data/round1.csv') 
-print(df.shape)
+a = df.shape
+st.text(a)
+
 print(df.head(2))
 print(df.columns)
+print(len)
