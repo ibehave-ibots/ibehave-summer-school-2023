@@ -44,3 +44,5 @@ sns.catplot(
     kind="bar",
 )
 st.write('The number of participants is '+str(len(df['Subject'].unique())))
+
+unique_participants=df['Subject'].unique()
