@@ -31,6 +31,7 @@ import seaborn as sns                   # https://seaborn.pydata.org/generated/s
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 import matplotlib.pyplot as plt
+import numpy as np
 
 df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
@@ -44,3 +45,5 @@ sns.displot(data=df, x='Time')
 st.write(plt.gcf())
 
 st.write(df['Correct'])
+Mean_value=np.mean(df['Time'])
+st.write(Mean_value)
