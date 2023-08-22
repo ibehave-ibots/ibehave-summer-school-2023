@@ -47,7 +47,7 @@ from collections import defaultdict
 
 correct_data = defaultdict(lambda: {'total_correct': 0, 'trial_count': 0})
 
-for row in data:
+for row in df:
     subject = row[1]
     correct = row[7]
     correct_data[subject]['total_correct'] += correct
