@@ -14,11 +14,18 @@ df['column_A'].unique()
 
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
+import matplotlib.pylab as plt
+import numpy as np
+
+df = pd.read_csv('data/round1.csv')
 
 st.title('Age Distribution Study')
-st.subheader('Subheader') 
+st.subheader('Data overview')
+hist,edges=np.histogram(df['Age'])
+plt.plot(edges[:-1],hist)
+plt.xlabel('Age')
 st.text('Text')
 st.write('## Subheader')
-df = pd.read_csv('data/round1.csv')
+
 
 
