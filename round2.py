@@ -42,3 +42,4 @@ sns.catplot(
     kind="bar",
 )
 st.write(plt)
+responses = df.loc[df['Correct']==1]
