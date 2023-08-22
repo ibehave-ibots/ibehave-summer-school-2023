@@ -18,14 +18,15 @@ These learning goals are designed to encompass technical, teamwork, time managem
 
 #### Round 1
 
-[![Generic badge](https://img.shields.io/badge/Team1-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round1-team1)
-[![Generic badge](https://img.shields.io/badge/Team2-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round1-team2)
-[![Generic badge](https://img.shields.io/badge/Team3-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round1-team3)
-[![Generic badge](https://img.shields.io/badge/Team4-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round1-team4)
-[![Generic badge](https://img.shields.io/badge/Team5-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round1-team5)
-[![Generic badge](https://img.shields.io/badge/Team6-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round1-team6)
-[![Generic badge](https://img.shields.io/badge/Team7-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round1-team7)
-[![Generic badge](https://img.shields.io/badge/Team8-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round1-team8)
+[![Generic badge](https://img.shields.io/badge/Team1-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023/tree/round1-team1)
+[![Generic badge](https://img.shields.io/badge/Team2-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023/tree/round1-team2)
+[![Generic badge](https://img.shields.io/badge/Team3-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023/tree/round1-team3)
+[![Generic badge](https://img.shields.io/badge/Team4-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023/tree/round1-team4)
+[![Generic badge](https://img.shields.io/badge/Team5-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023/tree/round1-team5)
+[![Generic badge](https://img.shields.io/badge/Team6-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023/tree/round1-team6)
+[![Generic badge](https://img.shields.io/badge/Team7-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023/tree/round1-team7)
+[![Generic badge](https://img.shields.io/badge/Team8-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023/tree/round1-team8)
+[![Generic badge](https://img.shields.io/badge/Team9-5BA100.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round1-team9)
 
 #### Round 2
 
@@ -37,6 +38,7 @@ These learning goals are designed to encompass technical, teamwork, time managem
 [![Generic badge](https://img.shields.io/badge/Team6-CC0066.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round2-team6)
 [![Generic badge](https://img.shields.io/badge/Team7-CC0066.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round2-team7)
 [![Generic badge](https://img.shields.io/badge/Team8-CC0066.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round2-team8)
+[![Generic badge](https://img.shields.io/badge/Team9-CC0066.svg)](https://gitpod.io/#https://github.com/ibehave-ibots/ibehave-summer-school-2023-workshop/tree/round2-team9)
 
 <br>
 <p align="center">
