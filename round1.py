@@ -11,7 +11,7 @@ df['column_A'].std()
 df['column_A'].value_counts() 
 df['column_A'].unique()
 '''
-
+import matplotlib.pyplot as plt
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 
@@ -22,5 +22,6 @@ st.write('## Subheader')
 df = pd.read_csv('data/round1.csv') 
 print(df.to_string())
 st.write(df)
-male_df=df.groupby(['M']).sum()
-male_df.plot(kind='pie')
+age_df=df.groupby(['Age']).sum()
+age_df.plot(kind='pie', y='Subject')
+st.write(plt)
