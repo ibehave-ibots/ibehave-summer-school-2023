@@ -61,7 +61,8 @@ st.write(df[df["Time"] == fast_response])
 
 #angle distributions
 fig, ax = plt.subplots()
-df.plot.hist(column= "Angle",ax=ax)
+df.plot.hist(column= "Angle",ax=ax, bins=1000)
+plt.xlim([0,200])
 st.pyplot(fig)
 
 m_col, f_col = st.columns(2)
