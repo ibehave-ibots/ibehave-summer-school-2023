@@ -74,4 +74,4 @@ plt.show()
 
 st.pyplot(plt)
 
-st.text("A radar plot correct rate based on ")
+st.text("A radar plot correct rate based on angle discrepancy")
