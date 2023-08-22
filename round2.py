@@ -43,3 +43,6 @@ sns.catplot(
 )
 st.write(plt)
 responses = df.loc[df['Correct']==1]
+
+male_responses=responses.loc[responses['Sex']=='M']
+print(male_responses)
