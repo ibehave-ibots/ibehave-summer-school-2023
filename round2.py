@@ -93,3 +93,12 @@ with f_col:
         kind="violin",
     )
     st.pyplot(plot)
+
+st.subheader("All correct answers, all participants")
+plot = sns.catplot(
+        data=male_df, 
+        x='Matching', 
+        y='Time', 
+        kind="bar",
+    )
+st.pyplot(plot)
