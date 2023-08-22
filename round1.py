@@ -17,6 +17,12 @@ import pandas as pd                     # https://pandas.pydata.org/docs/referen
 
 st.title('Flaming Flamingos Story Time')
 st.subheader('A legally different telling of a battle in space') 
-st.text('Text')
+st.text('In a galaxy far, far away... there were some flamingos.')
 st.write('## Subheader')
 df = pd.read_csv('data/round1.csv') 
+import numpy as np
+
+print(df)
+names = df[["Subject"]]
+print(names)
+
