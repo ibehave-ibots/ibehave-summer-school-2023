@@ -45,10 +45,10 @@ st.write(plt)
 
 for name, dd in df.groupby("Subject"):
     total_rows = dd.shape[0]
-    st.write(total_rows)
-    st.write(dd)
     sum_correct = dd['Correct'].sum()
-    st.write("correct per each subject")
-    st.write(sum_correct)
+    st.write("correct answer for subject: ", int(dd["Subject"].mean()))
+    st.write("This is the amount of total trials:", total_rows)
+    st.write("Amount of right trials", sum_correct)
+    st.write("And here is the df for each participant",dd)
 
 
