@@ -46,6 +46,7 @@ sns.catplot(
 
 # intro information
 st.title("Nature Cover Article")
+st.subheader('some stats')
 st.metric('number of subjects', len(np.unique(df['Subject'])))
 st.metric('average age', np.mean(df['Age']))
 st.metric('Average Performance (%)', 100 * np.sum(df['Correct']) / len(df['Correct']))
