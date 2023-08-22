@@ -55,6 +55,9 @@ with col1:
         kind="bar",
     )
     st.pyplot(plot)
+#subject with fastest response time
+fast_response = df["Time"].min()
+st.write(df[df["Time"] == fast_response])
 
 m_col, f_col = st.columns(2)
 male_df = df[df["Sex"] == "M"]
@@ -76,6 +79,15 @@ with m_col:
     )
     st.pyplot(plot)
 
+    st.subheader("Response time - Male participants")
+    plot = sns.catplot(
+        data=male_df, 
+        x='Matching', 
+        y='Time', 
+        kind="bar",
+    )
+    st.pyplot(plot)
+
 with f_col:
     
     st.subheader("All correct answers, Females")
@@ -93,20 +105,13 @@ with f_col:
         kind="violin",
     )
     st.pyplot(plot)
-
-st.subheader("Response time - Male participants")
-plot = sns.catplot(
-        data=male_df, 
-        x='Matching', 
-        y='Time', 
-        kind="bar",
-    )
-st.pyplot(plot)
-st.subheader("Response time - female participants")
-plot = sns.catplot(
+    st.subheader("Response time - female participants")
+    plot = sns.catplot(
         data=female_df, 
         x='Matching', 
         y='Time', 
         kind="bar",
     )
-st.pyplot(plot)
+    st.pyplot(plot)
+
+
