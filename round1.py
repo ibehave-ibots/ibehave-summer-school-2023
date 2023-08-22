@@ -29,7 +29,10 @@ st.text(f"The ratio of each sex of subject is {df[(df['Sex']=='M')].count() & df
 fig, ax = plt.subplots(1,2)
 ax[0].hist(df[(df['Sex']=='M')]['Age'], color = '#EF767A')
 ax[1].hist(df[(df['Sex']=='F')]['Age'], color = '#456990')
-xlabel
+ax[0].xlabel('age')
+ax[0].ylabel('count')
+ax[1].xlabel('age')
+ax[1].ylabel('count')
 st.pyplot(fig)
 # Create a violin plot using Seaborn
 plt.figure(figsize=(8, 6))  # Set the figure size
