@@ -54,7 +54,15 @@ time = df[["Time"]]
 fig, ax = plt.subplots()
 ax.hist(time, bins=6)
 
-st.pyplot(fig, x= "Time")
+#st.pyplot(fig, x= "Time")
+fig, ax = plt.subplots()
+st.table(df)
+
+
+
+
+
+
 
 
 
