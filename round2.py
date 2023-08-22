@@ -50,7 +50,6 @@ sns.catplot(
 st.write(plt)
 
 age = df[["Age"]]
-print(age)
 time = df[["Time"]]
 st.figure()
 st.bar_chart(time)
