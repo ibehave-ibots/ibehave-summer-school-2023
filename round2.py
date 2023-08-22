@@ -44,12 +44,16 @@ sns.catplot(
 #st.write(plt)
 responses = df.loc[df['Correct']==1]
 responses_fil = responses[['Sex','Correct']]
-'''
+
 male_responses=responses.loc[responses['Sex']=='M']
 print(len(male_responses))
+st.write('Total Correct responses by male: ')
+st.write(len(male_responses))
+
 female_responses=responses.loc[responses['Sex']=='F']
+st.write('Total Correct responses by female: ')
+st.write(len(female_responses))
 print(len(female_responses))
-'''
 fig = plt.figure( )
 sns.histplot(df['Time'], bins=10, kde=True)
 st.pyplot(fig)
