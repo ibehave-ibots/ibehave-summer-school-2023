@@ -16,7 +16,8 @@ import streamlit as st                  # https://docs.streamlit.io/library/api-
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 
 st.title('Middle school class trip')
-st.subheader('funny coding game') 
+st.subheader('our goal') 
 st.text('Being noisy')
 st.write('OMG, what are we gonna do?')
 df = pd.read_csv('data/round1.csv') 
+
