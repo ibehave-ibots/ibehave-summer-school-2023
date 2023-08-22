@@ -49,7 +49,7 @@ angles = df.Angle
 grouped = df.groupby('Angle')['Correct'].agg(['sum', 'count'])
 grouped['hit_rate'] = grouped['sum'] / grouped['count']
 
-# Reset the index for the resulting DataFrame
+
 grouped = grouped.reset_index()
 
 # Print or display the resulting DataFrame
