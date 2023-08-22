@@ -25,12 +25,12 @@ col1, col2 = st.columns(2)
 st.write(df)
 with col1:
     fig, ax = plt.subplots()
-    df.plot.hist(column = "Age", ax = ax)
+    df.plot.hist(column = "Age", ax = ax, color = "blue")
     st.pyplot(fig)
     st.write("Distribution of age for all participants")
 
     fig, ax = plt.subplots()
-    df[df["Sex"]=="M"].plot.hist(column = "Age", ax = ax, color = "blue")
+    df[df["Sex"]=="M"].plot.hist(column = "Age", ax = ax)
     plt.title("Age Male")
     st.pyplot(fig)
     st.write("Distribution of age for male")
@@ -48,6 +48,7 @@ with col2:
     df[df["Sex"]=="F"].plot.hist(column = "Age", ax = ax, color = "orange")
     plt.title("Age Female")
     st.pyplot(fig)
+    st.write("Distribution of age for female")
 # pie chart for sex
 # Histogram for age in general
 # Histogram for age split by sex
