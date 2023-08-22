@@ -36,7 +36,7 @@ ax[1].set_xlabel('Age')
 
 st.write(fig)
 st.text('Description of the age structure in experiment XY')
-st.write('## Subheader')
+st.write('## Interpretatio of data')
 
 
 
