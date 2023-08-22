@@ -39,3 +39,6 @@ st.data_editor(df)
 sns.catplot(data=df, x='Trial', y='Correct', kind="point")
 st.write(plt.gcf())
 
+plt.figure()
+sns.displot(data=df, x='Time')
+st.write(plt.gcf())
