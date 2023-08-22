@@ -15,8 +15,9 @@ df['column_A'].unique()
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
 
-st.title('Title')
-st.subheader('Subheader') 
+st.title('Superduuper Team 1')
+st.subheader('Unbelivable Data') 
 st.text('Text')
 st.write('## Subheader')
-df = pd.read_csv('data/round1.csv') 
+df = pd.read_csv('data/round1.csv')
+
