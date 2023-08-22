@@ -22,6 +22,7 @@ st.write('But I like math')
 df = pd.read_csv('data/round1.csv') 
 
 st.write(df)
+
 sex_counts = df['Sex'].value_counts()
 
 plt.bar(sex_counts.index, sex_counts.values)
@@ -29,10 +30,12 @@ plt.bar(sex_counts.index, sex_counts.values)
 plt.xlabel('Sex')
 plt.ylabel('Count')
 plt.title('Distribution of Sex in the DataFrame')
-
 st.pyplot()
-mean_age_by_sex = df.groupby('Sex')['Age'].mean()
 
+mean_age_by_sex = df.groupby('Sex')['Age'].mean()
 st.write("Mean Age by Sex")
 st.table(mean_age_by_sex)
 
+grouped = df.groupby('Sex')['Age'].agg(['mean', 'std'])
+st.write("Statistics of Age by Sex")
+st.table(grouped)
