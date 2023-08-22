@@ -27,7 +27,8 @@ with col1:
     df.plot.hist(column = "Age", ax = ax)
     st.pyplot(fig)
 with col2:
-    
+    sexTable = df['Sex'].value_counts()
+    st.write(sexTable)
 # pie chart for sex
 # Histogram for age in general
 # Histogram for age split by sex
