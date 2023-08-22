@@ -46,3 +46,9 @@ sns.catplot(
 st.write('The number of participants is '+str(len(df['Subject'].unique())))
 
 unique_participants=df['Subject'].unique()
+
+res = pd.DataFrame(columns=['participant_id', 'n_trials', 'performance'])
+for i, p in enumerate(unique_participants):
+    res.at[i,'participant_id'] = p
+    res.at[i, 'n_trials'] = len(df[df.Subject== p]) 
+st.write(res)
