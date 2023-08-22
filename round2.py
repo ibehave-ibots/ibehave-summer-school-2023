@@ -62,7 +62,7 @@ st.table(df)
 
 for PIL import Image
 image = Image.open('iBehave.jpg')
-st.image(image)
+st.image(image, caption='Oh yeah')
 
 
 
