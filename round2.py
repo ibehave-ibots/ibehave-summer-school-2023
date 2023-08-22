@@ -59,4 +59,6 @@ angles = [n / float(4) * 2 * pi for n in range(4)]
 angles += angles[:1]
 
 ax = plt.subplot(111,polar=True)
-ax = set_theta_
+
+ax = set_theta_offset(pi/2)
+ax.set_theta_direction(-1)
