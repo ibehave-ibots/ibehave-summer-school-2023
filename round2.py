@@ -94,7 +94,7 @@ with f_col:
     )
     st.pyplot(plot)
 
-st.subheader("All correct answers, all participants")
+st.subheader("Response time - Male participants")
 plot = sns.catplot(
         data=male_df, 
         x='Matching', 
