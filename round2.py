@@ -78,7 +78,7 @@ with m_col:
 
 with f_col:
     
-    st.subheader("All correct answers, all participants")
+    st.subheader("All correct answers, Females")
     plot = sns.catplot(
         data=female_df, 
         x='Subject', 
