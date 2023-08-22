@@ -69,4 +69,4 @@ fig,ax=plt.subplots(1,1)
 ax.scatter(df['Trial'],df['Time'])
 ax.set_xlabel('Trial')
 ax.set_ylabel('Time')
-st.write(fig)
+st.write(fig) #writes figure to board
