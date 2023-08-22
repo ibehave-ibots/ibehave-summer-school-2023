@@ -35,6 +35,9 @@ st.title('Flaming Flamingos Story Time 2')
 st.subheader('The Flamingo Squaks Back')
 df = pd.read_csv('data/round2.csv')
 st.data_editor(df)
+age = df[["Age"]]
+print(age)
+
 
 sns.catplot(
     data=df, 
