@@ -24,7 +24,7 @@ st.subheader('Data overview')
 hist,edges=np.histogram(df['Age'])
 plt.plot(edges[:-1],hist)
 plt.xlabel('Age')
-st.text('Text')
+st.text('Description of the age structure in experiment XY')
 st.write('## Subheader')
 
 
