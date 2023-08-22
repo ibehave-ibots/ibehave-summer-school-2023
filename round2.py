@@ -92,6 +92,15 @@ with m_col:
     )
     st.pyplot(plot)
 
+st.subheader("All correct answers, All")
+plot = sns.catplot(
+        data=df, 
+        x='Subject', 
+        y='Matching', 
+        kind="bar",
+    )
+st.pyplot(plot)
+
 with f_col:
     #all female
     
