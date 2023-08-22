@@ -22,3 +22,5 @@ st.write('But I like math')
 df = pd.read_csv('data/round1.csv') 
 
 st.write(df)
+z=df.iloc[:,2]
+plt(z)
