@@ -14,7 +14,7 @@ df['column_A'].unique()
 
 import streamlit as st                  # https://docs.streamlit.io/library/api-reference
 import pandas as pd                     # https://pandas.pydata.org/docs/reference/index.html
-
+import matplotlib.pyplot as plt
 st.title('Group8_r1_ibots')
 st.subheader('Hi Guys') 
 st.text('I don´t like food')
