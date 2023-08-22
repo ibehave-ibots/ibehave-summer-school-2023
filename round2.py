@@ -52,6 +52,8 @@ grouped['hit_rate'] = grouped['sum'] / grouped['count']
 # Reset the index for the resulting DataFrame
 grouped = grouped.reset_index()
 
+print(angles)
+
 
 angles = [n / float(4) * 2 * pi for n in range(4)]
 angles += angles[:1]
