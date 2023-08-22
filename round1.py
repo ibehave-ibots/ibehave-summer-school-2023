@@ -22,5 +22,12 @@ st.write('But I like math')
 df = pd.read_csv('data/round1.csv') 
 
 st.write(df)
-z=df.iloc[:,2]
-plt(len(z),z)
+sex_counts = df['Sex'].value_counts()
+
+plt.bar(sex_counts.index, sex_counts.values)
+
+plt.xlabel('Sex')
+plt.ylabel('Count')
+plt.title('Distribution of Sex in the DataFrame')
+
+plt.show()
