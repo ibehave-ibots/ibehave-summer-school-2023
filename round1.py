@@ -26,7 +26,9 @@ hist,edges=np.histogram(df['Age'])
 f_hist,f_edges=np.histogram(df['Age'])
 
 fig, ax = plt.subplots(2,1)
+ax[0].title('All participants')
 ax[0].hist(df['Age'],color='k')
+ax[1].title('Sex sepereation')
 ax[1].hist(df[df.Sex=='F']['Age'])
 ax[0].set_xlabel('Age')
 
